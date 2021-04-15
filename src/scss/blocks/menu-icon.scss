@@ -1,0 +1,45 @@
+.menu-icon {
+    display: none;
+    width: 44px;
+    height: 28px;
+    padding: 0;
+    z-index: 9999;
+    position: relative;
+
+    outline-offset: 4px;
+    cursor: pointer;
+
+    span, span:before, span:after {
+        display: block;
+        height: 5px;
+        width: 100%;
+
+        border-radius: 6px;
+        background: $blue;
+    }
+
+    span {
+        transition: width .25s linear;
+
+        &::after, &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            transform-origin: left center;
+
+            transition: transform .25s ease-in-out , top .25s ease-in-out, left .25s ease-in-out;
+        }
+
+        &:after {
+            top: 0;
+        }
+
+        &:before {
+            top: 24px;
+        }
+    }
+
+    @media (max-width: 840px) {
+        display: block;
+    }
+}

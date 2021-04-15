@@ -1,0 +1,27 @@
+.title {
+    
+
+    &--main {
+        font-size: 60px;
+        @include line-height(79.8, 60);
+    
+        .title__text {
+            display: block;
+    
+            &--md {
+                font-size: 80px;
+                @include line-height(106.4, 80);
+            }
+    
+            &--big {
+                font-size: 110px;
+                @include line-height(140, 110);
+            }
+        }
+    }
+
+    &--section {
+        font-size: 48px;
+        @include line-height(60, 48);
+    }
+}

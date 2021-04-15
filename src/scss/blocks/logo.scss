@@ -1,0 +1,10 @@
+.logo {
+    fill: $blue;
+    transition: fill .15s linear;
+
+    display: inline-block;
+
+    &:hover {
+        fill: rgba($blue, .8);
+    }
+}

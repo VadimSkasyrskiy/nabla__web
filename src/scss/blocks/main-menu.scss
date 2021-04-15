@@ -1,0 +1,40 @@
+.main-menu {
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 24px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        color: $blue;
+        font-size: 15px;
+        @include line-height(22.5);
+
+        position: relative;
+
+        &:after {
+            content: '';
+            display: block;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            height: 2px;
+            transform: scale(0);
+
+            background: $light-blue;
+            transition: transform .25s linear;
+        }
+
+        &:hover:after, &--active:after {
+            transform: scale(1);
+        }
+    }
+}

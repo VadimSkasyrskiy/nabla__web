@@ -1,0 +1,20 @@
+.btn {
+    color: $white;
+    background: $light-blue;
+    font-family: 'EuclidCircular-semibold';
+    @include line-height(22.5);
+    border: 1px solid transparent;
+    border-radius: 99px;
+    transition: border-color .25s linear, color .25s linear, background .25s linear;
+    cursor: pointer;
+
+    display: inline-block;
+    padding: 12px 22px;
+
+
+    &:hover {
+        border-color: $light-blue;
+        color:  $light-blue;
+        background: transparent;
+    }
+}

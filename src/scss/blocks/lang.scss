@@ -1,0 +1,32 @@
+.lang {
+    position: relative;
+
+    &__select {
+        color: $blue;
+        font-size: 15px;
+        @include line-height(22.5, 15);
+        cursor: pointer;
+        appearance: none; 
+        transition: color .15s linear;
+
+        display: block;
+        padding: 6px 29px 6px 12px;
+    } 
+    
+    &::after {
+        content: '\f078';
+        font-family: "Font Awesome";
+        font-size: 15px;
+        font-weight: 900;
+        color: $blue;
+        pointer-events: none;
+        transition: color .15s linear;
+
+        display: block;
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+}

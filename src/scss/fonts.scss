@@ -1,0 +1,26 @@
+// @mixin font($file_name, $font_name: $file_name, $weight: 400, $style: normal);
+
+// Roboto
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap:regular, 700");
+
+// Euclid
+@include font($file_name:"EuclidCircularB-Regular", $font_name: "EuclidCircular-regular", $weight: 400);
+@include font($file_name:"EuclidCircularB-SemiBold", $font_name: "EuclidCircular-semibold", $weight: 600);
+
+// Cabernet
+@include font($file_name:"Cabernet JF Pro", $font_name: "Cabernet JF", $weight: 400);
+
+// Fontawesome
+@include font($file_name: 'fa-regular-400', $font_name: 'Font Awesome', $weight: 400, $style: normal);
+@include font($file_name: 'fa-solid-900', $font_name: 'Font Awesome', $weight: 900, $style: normal);
+@include font($file_name: 'fa-brands-400', $font_name: 'Font Awesome Brands', $weight: 400, $style: normal);
+
+
+.far {
+    font-family: 'Font Awesome';
+}
+
+.fab {
+    font-family: 'Font Awesome Brands';
+}
+

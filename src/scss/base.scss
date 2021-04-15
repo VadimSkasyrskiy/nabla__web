@@ -1,0 +1,74 @@
+*, 
+*::after, 
+*::before {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $gray;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    color: $blue;
+    font-weight: 400;
+    font-family: 'Cabernet JF';
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+select, option, input, button {
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+
+input:focus, a:focus, select:focus, button:focus {
+    outline: 1px solid $gray;
+}
+
+body {
+    font-family: "EuclidCircular-regular";
+    font-size: 18px;
+    color: $gray;
+
+    @media (max-width: 840px) {
+        &.no-scroll {
+            overflow: hidden;
+        }
+
+        &.not-mobile.no-scroll {
+            padding-right: 17px;
+    
+            .main-header__container {
+                padding-right: 15px + 17px;
+            }
+        }
+    }
+}
+
+.ta-r {
+    text-align: right;
+}
+
+.ta-l {
+    text-align: left;
+}

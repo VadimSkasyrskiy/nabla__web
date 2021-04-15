@@ -1,0 +1,16 @@
+@mixin font($file_name, $font_name: $file_name, $weight: 400, $style: normal) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: 
+            url('../fonts/#{$file_name}.woff') format('woff'), 
+            url('../fonts/#{$file_name}.woff2') format('woff2'),
+            url('../fonts/#{$file_name}.ttf') format('truetype');
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+@mixin line-height($value, $font-size: 18) {
+    line-height: $value / $font-size;
+}

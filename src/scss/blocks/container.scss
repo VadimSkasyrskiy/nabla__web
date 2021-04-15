@@ -1,0 +1,12 @@
+.container {
+    max-width: 1296px;
+    padding-right: 60px;
+    padding-left: 60px;
+
+    margin: 0 auto;
+
+    @media (max-width: 1296px + 17px) {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
